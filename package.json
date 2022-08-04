@@ -1,0 +1,27 @@
+{
+  "name": "kaltura-block-gb-guten-block",
+  "version": "3.1.1",
+  "description": "Kaltura Video Plugin for WordPress",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StormCh/kaltura-video.git"
+  },
+  "keywords": [
+    "Kaltura",
+    "Vidoe",
+    "wordpress"
+  ],
+  "author": "Christian Storm",
+  "license": "ISC",
+  "scripts": {
+    "start": "cgb-scripts start",
+    "build": "cgb-scripts build",
+    "eject": "cgb-scripts eject",
+    "zip": "node scripts/create-zip.js"
+  },
+  "dependencies": {
+    "cgb-scripts": "1.23.1",
+    "dir-compressor": "^1.1.1"
+  }
+}
