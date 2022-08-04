@@ -47,7 +47,7 @@ class KalturaModel {
 		if ( ! KalturaHelpers::getOption( 'kaltura_partner_id' ) ) {
 			return;
 		}
-		$domain = "https://cms.video.funke.press";
+		$domain = KalturaHelpers::getCdnUrl();
 		$g = stream_context_create (array("ssl" => array("capture_peer_cert" => true)));
 		$r = fopen($domain, "rb", false, $g);
 		$cont = stream_context_get_params($r);	
