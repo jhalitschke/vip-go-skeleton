@@ -3,7 +3,7 @@
 Plugin Name: Kaltura Video
 Plugin URI: http://www.kaltura.org/
 Description: This is not just another video embed tool - it includes every functionality you might need for video and rich-media, including playing and uploading. Adopted on 2.8-rc4.
-Version: 3.1.2
+Version: 3.2.0
 Author: Funke Digital, Christian Storm
 Author URI: https://funkedigital.de
 */

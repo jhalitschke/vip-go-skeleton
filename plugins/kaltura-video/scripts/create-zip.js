@@ -12,3 +12,16 @@ const excludes = ['release', '.vscode', '.gitignore', '.git', '*.iml', 'scripts'
 const archive = new DirCompressor('../kaltura-video', 'release/kaltura-video_' + version + '.zip', excludes, false);
 
 archive.createZip();
+var Rsync = require('rsync');
+ 
+// Build the command
+var rsync = new Rsync()
+  .shell('ssh')
+  .flags('az')
+  .source('../kaltura-video')
+  .destination('../../funke-digital/plugins/kaltura-video');
+ 
+// Execute the command
+rsync.execute(function(error, code, cmd) {
+    // we're done
+});
