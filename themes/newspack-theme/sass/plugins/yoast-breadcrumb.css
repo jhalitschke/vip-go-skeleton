@@ -1,0 +1,46 @@
+/*
+Error: Invalid CSS after "	color: colors": expected ";", was ".$color__text-l..."
+        on line 5 of yoast-breadcrumb.scss
+
+1: @use '../variables-site/colors';
+2: @use '../variables-site/fonts';
+3:
+4: .site-breadcrumb {
+5: 	color: colors.$color__text-light;
+6:
+7: 	.wrapper {
+8: 		padding: 0.5em 0;
+9:
+10: 		> span {
+
+Backtrace:
+yoast-breadcrumb.scss:5
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:786:in `block in try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1183:in `rethrow'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:791:in `try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:387:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+	white-space: pre;
+	font-family: monospace;
+	content: "Error: Invalid CSS after \"	color: colors\": expected \";\", was \".$color__text-l...\"\A         on line 5 of yoast-breadcrumb.scss\A \A 1: @use '../variables-site/colors';\A 2: @use '../variables-site/fonts';\A 3: \A 4: .site-breadcrumb {\A 5: 	color: colors.$color__text-light;\A 6: \A 7: 	.wrapper {\A 8: 		padding: 0.5em 0;\A 9: \A 10: 		> span {";
+}

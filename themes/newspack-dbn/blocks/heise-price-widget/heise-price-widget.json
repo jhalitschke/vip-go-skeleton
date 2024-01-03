@@ -1,0 +1,103 @@
+{
+  "genesis-custom-blocks\/heise-price-widget": {
+	"name": "heise-price-widget",
+	"title": "Heise Price Widget",
+	"excluded": [],
+	"icon": "attach_money",
+	"category": {
+	  "icon": null,
+	  "slug": "widgets",
+	  "title": "Widgets"
+	},
+	"keywords": [
+	  "heise",
+	  "price"
+	],
+	"fields": {
+	  "partner_id-1": {
+		"location": "editor",
+		"width": "25",
+		"help": "",
+		"default": "funkeone",
+		"placeholder": "",
+		"maxlength": "",
+		"name": "partner_id-1",
+		"label": "Partner-ID",
+		"control": "text",
+		"type": "string",
+		"order": 0
+	  },
+	  "widget_id": {
+		"location": "editor",
+		"width": "25",
+		"help": "",
+		"default": "",
+		"placeholder": "",
+		"maxlength": "",
+		"name": "widget_id",
+		"label": "Widget_ID",
+		"control": "text",
+		"type": "string",
+		"order": 1
+	  },
+	  "type-1": {
+		"location": "editor",
+		"width": "25",
+		"help": "",
+		"options": [
+		  {
+			"value": "comparison",
+			"label": "Vergleichstabelle"
+		  },
+		  {
+			"value": "gallery",
+			"label": "Bilderstrecke"
+		  },
+		  {
+			"value": "history",
+			"label": "Preishistorie"
+		  },
+		  {
+			"value": "price",
+			"label": "Angebote"
+		  },
+		  {
+			"value": "gallery-price",
+			"label": "Bildgalerie-Angebot"
+		  }
+		],
+		"default": "",
+		"name": "type-1",
+		"label": "Type",
+		"order": 2,
+		"control": "select",
+		"type": "string"
+	  },
+	  "layout": {
+		"location": "editor",
+		"width": "25",
+		"help": "",
+		"options": [
+		  {
+			"value": "normal",
+			"label": "Standardaussehen"
+		  },
+		  {
+			"value": "compact",
+			"label": "Reduzierte H\u00f6he"
+		  },
+		  {
+			"value": "supercompact",
+			"label": "Nur das erste Angebot"
+		  }
+		],
+		"default": "normal",
+		"name": "layout",
+		"label": "Layout",
+		"order": 3,
+		"control": "select",
+		"type": "string"
+	  }
+	}
+  }
+}

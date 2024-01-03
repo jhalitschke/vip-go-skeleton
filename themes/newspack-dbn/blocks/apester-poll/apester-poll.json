@@ -1,0 +1,29 @@
+{
+  "genesis-custom-blocks\/apester-poll": {
+	"name": "apester-poll",
+	"title": "Apester Widget",
+	"excluded": [],
+	"icon": "genesis_custom_blocks",
+	"category": {
+	  "icon": null,
+	  "slug": "text",
+	  "title": "Text"
+	},
+	"keywords": [],
+	"fields": {
+	  "media-id": {
+		"location": "editor",
+		"width": "50",
+		"help": "",
+		"default": "",
+		"placeholder": "",
+		"maxlength": "",
+		"name": "media-id",
+		"label": "Media ID",
+		"control": "text",
+		"type": "string",
+		"order": 0
+	  }
+	}
+  }
+}

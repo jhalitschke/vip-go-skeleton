@@ -1,0 +1,38 @@
+{
+	"genesis-custom-blocks/ergebnis-widget": {
+		"name": "ergebnis-widget",
+		"title": "Ergebnis Widget",
+		"excluded": [],
+		"icon": "genesis_custom_blocks",
+		"category": { "icon": null, "slug": "text", "title": "Text" },
+		"keywords": [],
+		"fields": {
+			"ergebnis-title": {
+				"location": "editor",
+				"width": "50",
+				"help": "",
+				"default": "Imtest Ergebnis:",
+				"placeholder": "Ergebnis Title",
+				"maxlength": "",
+				"name": "ergebnis-title",
+				"label": "Ergebnis Title",
+				"control": "text",
+				"type": "string",
+				"order": 0
+			},
+			"ergebnis-number": {
+				"location": "editor",
+				"width": "50",
+				"help": "",
+				"default": "",
+				"placeholder": "Number",
+				"maxlength": "",
+				"name": "ergebnis-number",
+				"label": "Ergebnis Number",
+				"control": "text",
+				"type": "string",
+				"order": 1
+			}
+		}
+	}
+}

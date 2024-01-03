@@ -1,0 +1,54 @@
+{
+  "genesis-custom-blocks\/counterpixel": {
+	"name": "counterpixel",
+	"title": "Z\u00e4hl-Pixel",
+	"excluded": [
+	  "recipe"
+	],
+	"icon": "public",
+	"category": {
+	  "icon": null,
+	  "slug": "embed",
+	  "title": "Einbettungen"
+	},
+	"keywords": [
+	  "pixel",
+	  "z\u00e4hlpixel",
+	  "advertorial",
+	  "native",
+	  "advertising"
+	],
+	"fields": {
+	  "javascript-pixel": {
+		"location": "editor",
+		"width": "100",
+		"help": "Hinweis: Der Pixel-Code kann mit oder ohne <script>-Tags eingef\u00fcgt werden.  Bei Nutzern ohne Admin-Rechte werden die <script>-Tags automatisch beim Speichern entfernt, der Code funktioniert im Frontend trotzdem.",
+		"default": "",
+		"placeholder": "\/\/ hier JavaScript code einf\u00fcgen",
+		"maxlength": "",
+		"number_rows": 4,
+		"new_lines": "none",
+		"name": "javascript-pixel",
+		"label": "JavaScript Pixel",
+		"order": 0,
+		"control": "textarea",
+		"type": "string"
+	  },
+	  "amp-pixel": {
+		"location": "editor",
+		"width": "100",
+		"help": "Hinweis: <img>-Tags werden automatisch f\u00fcr AMP in das entsprechende <amp-img>-Tag konvertiert.",
+		"default": "",
+		"placeholder": "<img ...> oder <amp-img ...> einf\u00fcgen",
+		"maxlength": "",
+		"number_rows": 4,
+		"new_lines": "none",
+		"name": "amp-pixel",
+		"label": "AMP Pixel",
+		"order": 1,
+		"control": "textarea",
+		"type": "string"
+	  }
+	}
+  }
+}

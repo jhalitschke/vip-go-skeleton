@@ -1,0 +1,31 @@
+/*!
+Theme Name: Newspack DBN - Selfies
+Theme URI: https://github.com/funkedigital/rd-newspack-theme
+Author: Automattic / Funke Digital
+Author URI: https://newspack.blog
+Description: Newspack Child Theme for Funke Digital Brands Network.
+Requires at least: WordPress 4.9.6
+Version: 1.55.5
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Template: newspack-theme
+Text Domain: newspack-dbn
+Tags:
+AMP: true
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Newspack Theme is based on Underscores https://underscores.me/, (C) 2012-2018 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+@import 'variables-site/variables-site';
+@import 'local-fonts';
+@import '../../../../newspack-theme/sass/style-base';
+
+@import '../../navigation/links';
+@import '../../mixins/mixins-master';
+@import '../../ads/ads';
+@import '../../forms/forms';
+
+@import 'selfies-style';

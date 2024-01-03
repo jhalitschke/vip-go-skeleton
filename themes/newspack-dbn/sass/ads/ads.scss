@@ -1,0 +1,199 @@
+//Superbanner
+.single,
+.page,
+.archive,
+.error404,
+.search {
+	.contentAd--sb1 {
+		display: block;
+		.ad {
+			position: relative;
+			display: flex;
+			height: 250px;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+.single,
+.archive,
+.error404,
+.search {
+	.contentAd--sb1 {
+		padding: 1em $size__spacing-content;
+	}
+}
+.home {
+	.contentAd--sb1 {
+		padding-top: $size__spacing-content;
+	}
+}
+
+//Skyscrapper
+.contentAd--sky1 {
+	display: none;
+}
+@include media(wide) {
+	div[class*="contentAd--sky"] {
+		display: block;
+		position: sticky;
+		top: 0px;
+		clear: both;
+		z-index: 99;
+	}
+	.contentAd--sky1 {
+		align-self: flex-end;
+	}
+	.contentAd--skyl {
+		align-self: flex-start;
+	}
+
+	.single .contentAd--skyl {
+		position: absolute !important;
+		top: auto;
+	}
+
+	.single,
+	.page,
+	.error404,
+	.archive {
+		div[class*="contentAd--sky"] .ad {
+			position: absolute;
+			width: max-content;
+		}
+		.contentAd--sky1 .ad {
+			left: 10px;
+		}
+		.contentAd--skyl .ad {
+			right: 10px;
+			left: unset;
+		}
+	}
+	.search {
+		.contentAd--sky1 {
+			top: 150px;
+		}
+	}
+
+	/* avoid skyscrapers overlaying the footer */
+	.site-footer {
+		position: relative;
+		z-index: 999;
+	}
+}
+
+//
+div {
+	[id*="mr"],
+	[id*="pos2-"] {
+		margin-bottom: 1rem;
+	}
+}
+
+// MR1 + MR2 in loop
+.contentAd--mr1,
+.archive .entry.loop-ad #mr1-1,
+.archive .entry.loop-ad #mr2-2
+{
+	align-self: flex-start;
+	top: 0;
+	width: 300px;
+	margin:0;
+	> .has-ad {
+		margin-top: 1.4em;
+		&:before {
+			top: -11px;
+		}
+	}
+}
+
+//Pos
+.contentAd-- {
+	&pos1,
+	&pos2,
+	&pos3,
+	&posn,
+	&amp {
+		min-height: 280px;
+		padding: 1rem 0;
+		margin-top: 32px;
+		box-sizing: content-box;
+		text-align: center;
+		.ad-marker {
+			font-size: 9px;
+			margin-top: -13px;
+			color: $color__text-light;
+		}
+	}
+}
+
+//Amp
+.contentAd-- {
+	&inline-amp,
+	&amp {
+		text-align: center;
+		.ad-marker {
+			font-size: 9px;
+			margin-top: -13px;
+			color: $color__text-light;
+		}
+	}
+}
+
+amp-fx-flying-carpet:before {
+	color: $color__text-light;
+	content: "Anzeige";
+	display: inline-block;
+	font-size: 10px;
+	left: -12px;
+	position: relative;
+	text-transform: uppercase;
+	top: 10px;
+	transform: rotate(-90deg);
+	z-index: 9;
+}
+
+.ad-inline,
+.ad {
+	text-align: center;
+
+	&.mob {
+		min-height: 280px;
+	}
+}
+
+//Ad text
+.has-ad {
+	position: relative;
+	&:before {
+		content: "Anzeige";
+		text-transform: uppercase;
+		position: absolute;
+		top: -12px;
+		font-size: 9px;
+		color: $color__text-light;
+	}
+}
+
+//Home inline-ads
+// FIXME this seems to be to unspecific - works everywhere, not only on homepage
+.page article.entry:has(> .ad) {
+	margin: initial !important;
+}
+
+// Loop Ads on archive pages (category, etc.)
+// TODO
+.archive .loop-ad {
+	.mob, .amp {
+		min-height: 280px;
+		/*padding: 1rem 0;*/
+		margin-top: 32px;
+		box-sizing: content-box;
+		text-align: center;
+	}
+	&.entry {
+		> .has-ad {
+			margin-top: 1.4em;
+		}
+	}
+}

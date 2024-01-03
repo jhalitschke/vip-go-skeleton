@@ -1,0 +1,74 @@
+<!-- wp:group {"align":"full","backgroundColor":"light-gray","className":"no-shadows newspack-pattern homepage-posts__style-16 top-group-block"} -->
+    <div class="wp-block-group alignfull no-shadows newspack-pattern homepage-posts__style-16 top-group-block has-light-gray-background-color has-background"><!-- wp:heading -->
+    <h2>TOP 5 - DIE BESTEN PRODUKTE</h2>
+    <!-- /wp:heading -->
+
+    <!-- wp:columns -->
+        <div class="wp-block-columns">
+        <!-- wp:column {"className":"top-list"} -->
+            <div class="wp-block-column top-list"><!-- wp:heading -->
+            <h2><meta charset="utf-8">DIE BESTEN SMARTPHONES</h2>
+            <!-- /wp:heading -->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"showAvatar":false,"postsToShow":1,"mediaPosition":"left","categories":[],"tags":[],"specificPosts":["21930"],"typeScale":1,"imageScale":1,"specificMode":true,"textColor":"secondary-variation"} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"showAvatar":false,"postsToShow":1,"mediaPosition":"left","categories":[],"tags":["517"],"typeScale":1,"imageScale":1,"textColor":"secondary-variation"} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"postsToShow":1,"mediaPosition":"left","specificPosts":["21872"],"typeScale":1,"imageScale":1,"specificMode":true} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"showCaption":true,"imageShape":"square","showAuthor":false,"showAvatar":false,"postsToShow":1,"mediaPosition":"left","categories":[],"tags":["517"],"typeScale":1,"imageScale":1,"textColor":"secondary-variation"} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"postsToShow":1,"mediaPosition":"left","specificPosts":["21930"],"typeScale":1,"imageScale":1,"specificMode":true} /-->
+
+            <!-- wp:buttons {"contentJustification":"center","orientation":"vertical","align":"wide"} -->
+            <div class="wp-block-buttons alignwide is-content-justification-center is-vertical"><!-- wp:button {"className":"is-style-fill"} -->
+            <div class="wp-block-button is-style-fill"><a class="wp-block-button__link">LIST ANSEHEN</a></div>
+            <!-- /wp:button --></div>
+            <!-- /wp:buttons --></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"className":"top-list"} -->
+            <div class="wp-block-column top-list"><!-- wp:heading -->
+            <h2><meta charset="utf-8">DIE BESTEN SMARTPHONES </h2>
+            <!-- /wp:heading -->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"showAvatar":false,"postsToShow":1,"mediaPosition":"left","categories":["307"],"tags":[],"specificPosts":[],"typeScale":1,"imageScale":1,"textColor":"secondary-variation"} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"showAvatar":false,"postsToShow":1,"mediaPosition":"left","categories":[],"tags":["517"],"typeScale":1,"imageScale":1,"textColor":"secondary-variation"} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"postsToShow":1,"mediaPosition":"left","specificPosts":["21872"],"typeScale":1,"imageScale":1,"specificMode":true} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"showCaption":true,"imageShape":"square","showAuthor":false,"showAvatar":false,"postsToShow":1,"mediaPosition":"left","categories":[],"tags":["517"],"typeScale":1,"imageScale":1,"textColor":"secondary-variation"} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"postsToShow":1,"mediaPosition":"left","categories":["307"],"specificPosts":["21930"],"typeScale":1,"imageScale":1} /-->
+
+            <!-- wp:buttons {"contentJustification":"center","orientation":"vertical","align":"wide"} -->
+            <div class="wp-block-buttons alignwide is-content-justification-center is-vertical"><!-- wp:button {"className":"is-style-fill"} -->
+            <div class="wp-block-button is-style-fill"><a class="wp-block-button__link">LIST ANSEHEN</a></div>
+            <!-- /wp:button --></div>
+            <!-- /wp:buttons --></div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"className":"top-list"} -->
+            <div class="wp-block-column top-list"><!-- wp:heading -->
+            <h2><meta charset="utf-8">DIE BESTEN SMARTPHONES</h2>
+            <!-- /wp:heading -->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"showAvatar":false,"postsToShow":1,"mediaPosition":"left","categories":[],"tags":[],"specificPosts":["21930"],"typeScale":1,"imageScale":1,"specificMode":true,"textColor":"secondary-variation"} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"showAvatar":false,"postsToShow":1,"mediaPosition":"left","categories":[],"tags":["517"],"typeScale":1,"imageScale":1,"textColor":"secondary-variation"} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"postsToShow":1,"mediaPosition":"left","specificPosts":["21872"],"typeScale":1,"imageScale":1,"specificMode":true} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"showCaption":true,"imageShape":"square","showAuthor":false,"showAvatar":false,"postsToShow":1,"mediaPosition":"left","categories":[],"tags":["517"],"typeScale":1,"imageScale":1,"textColor":"secondary-variation"} /-->
+
+            <!-- wp:newspack-blocks/homepage-articles {"showExcerpt":false,"showDate":false,"imageShape":"square","showAuthor":false,"postsToShow":1,"mediaPosition":"left","specificPosts":["21930"],"typeScale":1,"imageScale":1,"specificMode":true} /-->
+
+            <!-- wp:buttons {"contentJustification":"center","orientation":"vertical","align":"wide"} -->
+            <div class="wp-block-buttons alignwide is-content-justification-center is-vertical"><!-- wp:button {"className":"is-style-fill"} -->
+            <div class="wp-block-button is-style-fill"><a class="wp-block-button__link">LIST ANSEHEN</a></div>
+            <!-- /wp:button --></div>
+            <!-- /wp:buttons --></div>
+        <!-- /wp:column --></div>
+    <!-- /wp:columns --></div>
+<!-- /wp:group -->

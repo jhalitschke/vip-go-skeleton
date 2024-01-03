@@ -1,0 +1,51 @@
+/*
+Error: Invalid CSS after "...-top: structure": expected ";", was ".$size__vertica..."
+        on line 13 of newspack-ads.scss
+
+8: 	display: flex;
+9: 	justify-content: center;
+10: 	align-items: center;
+11:
+12: 	> * {
+13: 		margin-top: structure.$size__vertical-rhythm * 2;
+14: 		margin-bottom: structure.$size__vertical-rhythm * 2;
+15: 	}
+16:
+17: 	&.global_above_header {
+18: 		background-color: colors.$color__background-pre;
+
+Backtrace:
+newspack-ads.scss:13
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:786:in `block in try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1183:in `rethrow'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:791:in `try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:387:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+	white-space: pre;
+	font-family: monospace;
+	content: "Error: Invalid CSS after \"...-top: structure\": expected \";\", was \".$size__vertica...\"\A         on line 13 of newspack-ads.scss\A \A 8: 	display: flex;\A 9: 	justify-content: center;\A 10: 	align-items: center;\A 11: \A 12: 	> * {\A 13: 		margin-top: structure.$size__vertical-rhythm * 2;\A 14: 		margin-bottom: structure.$size__vertical-rhythm * 2;\A 15: 	}\A 16: \A 17: 	&.global_above_header {\A 18: 		background-color: colors.$color__background-pre;";
+}

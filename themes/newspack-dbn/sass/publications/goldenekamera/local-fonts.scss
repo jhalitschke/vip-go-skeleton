@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "Gotham Book";
+	font-style: bold;
+	font-weight: 800;
+	src: url("/wp-content/themes/newspack-dbn/fonts/Gotham_Book/Gotham_Book_Regular.woff")
+			format("woff"),
+		url("/wp-content/themes/newspack-dbn/fonts/Gotham_Book/Gotham_Book_Regular.woff2")
+			format("woff2");
+}
+
+@font-face {
+	font-family: "Gotham Light";
+	font-style: light;
+	font-weight: 300;
+	src: url("/wp-content/themes/newspack-dbn/fonts/Gotham_Light/Gotham_Light_Regular.woff")
+			format("woff"),
+		url("/wp-content/themes/newspack-dbn/fonts/Gotham_Light/Gotham_Light_Regular.woff2")
+			format("woff2");
+}
+
+@font-face {
+	font-family: "Droid Sans";
+	font-style: light;
+	font-weight: 300;
+	src: url("/wp-content/themes/newspack-dbn/fonts/Droid_Sans/Droid_Sans.woff")
+			format("woff"),
+		url("/wp-content/themes/newspack-dbn/fonts/Droid_Sans/Droid_Sans.woff2")
+			format("woff2");
+}

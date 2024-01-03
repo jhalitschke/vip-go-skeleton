@@ -1,0 +1,111 @@
+{
+  "genesis-custom-blocks\/advertising": {
+	"name": "advertising",
+	"title": "Advertising",
+	"excluded": [],
+	"icon": "attach_money",
+	"category": {
+	  "icon": null,
+	  "slug": "Werbung",
+	  "title": "Werbung"
+	},
+	"keywords": [
+	  "ads",
+	  "admo",
+	  "werbung"
+	],
+	"fields": {
+	  "advertising": {
+		"help": "Es k\u00f6nnen alle Ad-Environments (amp, mob, sta) in diesem Block angelegt werden.",
+		"min": 1,
+		"max": 3,
+		"sub_fields": {
+		  "environment": {
+			"location": "editor",
+			"width": "25",
+			"help": "",
+			"options": [
+			  {
+				"value": "amp",
+				"label": "AMP"
+			  },
+			  {
+				"value": "mob",
+				"label": "Mobile"
+			  },
+			  {
+				"value": "sta",
+				"label": "Desktop"
+			  }
+			],
+			"default": "amp",
+			"name": "environment",
+			"label": "Environment",
+			"order": 0,
+			"control": "select",
+			"type": "string",
+			"parent": "advertising"
+		  },
+		  "ad_slot": {
+			"location": "editor",
+			"width": "50",
+			"help": "",
+			"default": "pos1",
+			"placeholder": "pos1",
+			"maxlength": "",
+			"name": "ad_slot",
+			"label": "Slot-Name",
+			"control": "text",
+			"type": "string",
+			"order": 1,
+			"parent": "advertising"
+		  },
+		  "ad_sizes": {
+			"location": "editor",
+			"width": "75",
+			"help": "Gr\u00f6\u00dfen des Slots in JS-Array Notation.",
+			"default": "[[300, 250], [300, 600]]",
+			"placeholder": "[[300, 250], [300, 600]]",
+			"maxlength": "",
+			"name": "ad_sizes",
+			"label": "Ad-Sizes",
+			"control": "text",
+			"type": "string",
+			"order": 2,
+			"parent": "advertising"
+		  },
+		  "poscount": {
+			"location": "editor",
+			"width": "25",
+			"help": "",
+			"default": "1",
+			"placeholder": "",
+			"maxlength": "",
+			"name": "poscount",
+			"label": "Pos-Count",
+			"control": "text",
+			"type": "string",
+			"order": 3,
+			"parent": "advertising"
+		  }
+		},
+		"name": "advertising",
+		"label": "Advertising",
+		"location": "editor",
+		"order": 0,
+		"control": "repeater",
+		"type": "object"
+	  }
+	},
+	"previewAttributes": {
+	  "advertising": {
+		"rows": [
+		  [],
+		  {
+			"environment": "mob"
+		  }
+		]
+	  }
+	}
+  }
+}

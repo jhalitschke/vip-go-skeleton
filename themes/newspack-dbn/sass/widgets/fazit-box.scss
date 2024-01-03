@@ -1,0 +1,74 @@
+/*Fazit*/
+.fazit-box {
+	padding: 0.5em 1em 1.5em 1em;
+	border: 2px solid #1d1d1d;
+	li {
+		list-style-type: none;
+	}
+	[class^='fazit-'] {
+		padding-left: 2em;
+		position: relative;
+		ul {
+			padding-left: 0;
+			padding-top: 0.2em;
+		}
+		> li::first-line {
+			font-weight: bold;
+		}
+		&::before {
+			@include center-flex;
+			position: absolute;
+			font-size: 50px;
+			left: -2px;
+			top: 4px;
+			line-height: 0.4;
+			border-radius: 50%;
+			font-weight: bold;
+		}
+	}
+	.fazit-pro::before {
+		content: '\002B';
+		color: $color_score_great;
+	}
+	.fazit-con::before {
+		content: '\2212';
+		color: $color_score_bad;
+	}
+	@include media( mobile ) {
+		padding: 1em 2.5em;
+		[class^='fazit-']::before {
+			top: 6px;
+		}
+	}
+}
+.score {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.2em 2em;
+	font-size: 1em;
+	font-weight: 700;
+	@include media( mobile ) {
+		font-size: 1.1em;
+		div:nth-child( 1 ) {
+			text-align: left;
+		}
+		div:nth-child( 2 ) {
+			text-align: right;
+		}
+	}
+	&.bg_color- {
+		&good {
+			background-color: $color_score_good;
+			color: $color__text-main;
+		}
+		&bad {
+			background-color: $color_score_bad;
+			color: $color__text-white;
+		}
+		&great {
+			background-color: $color_score_great;
+			color: $color__text-white;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+/*
+Error: Invalid CSS after "...px solid colors": expected ";", was ".$color__border;"
+        on line 7 of style-default-editor.scss
+
+2: @use '../../variables-site/fonts';
+3: @use '../../variables-site/structure';
+4:
+5: .accent-header,
+6: .article-section-title {
+7: 	border-bottom: 4px solid colors.$color__border;
+8: 	color: colors.$color__primary;
+9: 	font-size: fonts.$font__size-sm;
+10: 	margin-top: 0;
+11: 	margin-bottom: #{structure.$size__spacing-unit * 0.75};
+12: 	padding: 0 0 #{structure.$size__spacing-unit * 0.33};
+
+Backtrace:
+style-default-editor.scss:7
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:786:in `block in try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1183:in `rethrow'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:791:in `try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:387:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+	white-space: pre;
+	font-family: monospace;
+	content: "Error: Invalid CSS after \"...px solid colors\": expected \";\", was \".$color__border;\"\A         on line 7 of style-default-editor.scss\A \A 2: @use '../../variables-site/fonts';\A 3: @use '../../variables-site/structure';\A 4: \A 5: .accent-header,\A 6: .article-section-title {\A 7: 	border-bottom: 4px solid colors.$color__border;\A 8: 	color: colors.$color__primary;\A 9: 	font-size: fonts.$font__size-sm;\A 10: 	margin-top: 0;\A 11: 	margin-bottom: #{structure.$size__spacing-unit * 0.75};\A 12: 	padding: 0 0 #{structure.$size__spacing-unit * 0.33};";
+}

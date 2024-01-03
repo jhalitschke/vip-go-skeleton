@@ -1,0 +1,23 @@
+@use '../variables-site/colors';
+@use '../mixins/utilities';
+
+a {
+	@include utilities.link-transition;
+	color: colors.$color__text-light;
+
+	&:visited {
+		color: inherit;
+	}
+
+	&:hover,
+	&:active {
+		color: colors.$color__text-main;
+		outline: 0;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: thin dotted;
+		text-decoration: underline;
+	}
+}

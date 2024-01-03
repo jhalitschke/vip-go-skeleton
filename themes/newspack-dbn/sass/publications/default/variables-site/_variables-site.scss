@@ -1,0 +1,54 @@
+// Now overlay our style-specific ones, so we're only overriding specific variables.
+@import 'structure';
+@import 'fonts';
+@import 'colors';
+@import 'transitions';
+
+// Responsive widths.
+$mobile_width: 600px;
+$tablet_width: 782px;
+$narrow_desktop_width: 960px;
+$desktop_width: 1168px;
+$wide_width: 1379px;
+@mixin media( $res ) {
+	@if mobileonly == $res {
+		@media only screen and (max-width: $mobile_width - 1) {
+			@content;
+		}
+	}
+	@if mobile == $res {
+		@media only screen and (min-width: $mobile_width) {
+			@content;
+		}
+	}
+	@if tabletonly == $res {
+		@media only screen and (max-width: #{ $tablet_width - 1 }) {
+			@content;
+		}
+	}
+	@if tablet == $res {
+		@media only screen and (min-width: $tablet_width) {
+			@content;
+		}
+	}
+	@if narrowdesktop == $res {
+		@media only screen and (min-width: $narrow_desktop_width) {
+			@content;
+		}
+	}
+	@if notdesktop == $res {
+		@media only screen and (max-width: #{ $desktop_width - 1 }) {
+			@content;
+		}
+	}
+	@if desktop == $res {
+		@media only screen and (min-width: $desktop_width) {
+			@content;
+		}
+	}
+	@if wide == $res {
+		@media only screen and (min-width: $wide_width) {
+			@content;
+		}
+	}
+}

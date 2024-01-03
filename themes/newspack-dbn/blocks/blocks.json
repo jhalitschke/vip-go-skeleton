@@ -1,0 +1,768 @@
+{
+	"genesis-custom-blocks/fd-accordion": {
+		"name": "fd-accordion",
+		"title": "FD Accordion",
+		"excluded": [],
+		"icon": "view_day",
+		"category": {
+			"icon": null,
+			"slug": "text",
+			"title": "Text"
+		},
+		"keywords": [
+			"accordion",
+			"akkordeon"
+		],
+		"textdomain": "fd-accordion",
+		"fields": {
+			"fd-accordion-repeater": {
+				"help": "",
+				"min": "1",
+				"max": "",
+				"sub_fields": {
+					"fd-accordion-header": {
+						"location": "editor",
+						"width": "75",
+						"help": "",
+						"default": "",
+						"placeholder": "",
+						"name": "fd-accordion-header",
+						"label": "Header",
+						"control": "rich_text",
+						"type": "string",
+						"order": 0,
+						"parent": "fd-accordion-repeater"
+					},
+					"fd-accordion-header-style": {
+						"location": "editor",
+						"width": "25",
+						"help": "",
+						"options": [
+							{
+								"value": "p",
+								"label": "Default"
+							},
+							{
+								"value": "h2",
+								"label": "H2"
+							},
+							{
+								"value": "h3",
+								"label": "H3"
+							},
+							{
+								"value": "h4",
+								"label": "H4"
+							},
+							{
+								"value": "h5",
+								"label": "H5"
+							},
+							{
+								"value": "h6",
+								"label": "H6"
+							}
+						],
+						"default": "default",
+						"name": "fd-accordion-header-style",
+						"label": "Style of the header",
+						"order": 1,
+						"control": "select",
+						"type": "string",
+						"parent": "fd-accordion-repeater"
+					},
+					"fd-accordion-body": {
+						"location": "editor",
+						"width": "100",
+						"help": "",
+						"default": "",
+						"placeholder": "",
+						"name": "fd-accordion-body",
+						"label": "Body",
+						"order": 2,
+						"control": "rich_text",
+						"type": "string",
+						"parent": "fd-accordion-repeater"
+					},
+					"fd-accordion-active": {
+						"location": "editor",
+						"width": "100",
+						"help": "",
+						"default": false,
+						"name": "fd-accordion-active",
+						"label": "Should this box be shown open?",
+						"order": 3,
+						"control": "checkbox",
+						"type": "boolean",
+						"parent": "fd-accordion-repeater"
+					}
+				},
+				"name": "fd-accordion-repeater",
+				"label": "Repeater",
+				"location": "editor",
+				"order": 0,
+				"control": "repeater",
+				"type": "object"
+			}
+		}
+	},
+	"genesis-custom-blocks/guenstiger-widget": {
+		"name": "guenstiger-widget",
+		"title": "Heise Testtabellen-Widget",
+		"excluded": [],
+		"icon": "genesis_custom_blocks",
+		"category": {
+			"icon": null,
+			"slug": "text",
+			"title": "Text"
+		},
+		"keywords": [
+			"heise",
+			"testtabellen",
+			"günstiger",
+			"guenstiger"
+		],
+		"viewScript": "guenstiger-widget-script",
+		"fields": {
+			"publisher_id": {
+				"location": "editor",
+				"width": "",
+				"help": "",
+				"default": "364485",
+				"placeholder": "",
+				"name": "publisher_id",
+				"label": "Publisher-ID",
+				"order": 1,
+				"control": "number",
+				"type": "integer"
+			},
+			"table_id": {
+				"location": "editor",
+				"width": "",
+				"help": "Wenn dieses Widget mehrfach in einem Beitrag verwendet werden soll, muss jedes Widget eine unterschiedliche Tabellen-ID haben.",
+				"default": "11309",
+				"placeholder": "",
+				"name": "table_id",
+				"label": "Tabellen-ID",
+				"order": 1,
+				"control": "number",
+				"type": "integer"
+			}
+		}
+	},
+	"genesis-custom-blocks/outtra-widget": {
+		"name": "outtra-widget",
+		"title": "Outtra Widget",
+		"excluded": [],
+		"icon": "genesis_custom_blocks",
+		"category": {
+			"icon": null,
+			"slug": "text",
+			"title": "Text"
+		},
+		"keywords": [
+			"outtra",
+			"coco"
+		],
+		"fields": {
+			"widget_type": {
+				"location": "editor",
+				"width": "50",
+				"help": "",
+				"options": [
+					{
+						"value": "wtb",
+						"label": "Where-to-Buy"
+					},
+					{
+						"value": "pdw",
+						"label": "Product-Wall"
+					},
+					{
+						"value": "pct",
+						"label": "Price-Table"
+					}
+				],
+				"default": "",
+				"name": "widget_type",
+				"label": "Widget Type",
+				"order": 0,
+				"control": "select",
+				"type": "string"
+			},
+			"publisher_id": {
+				"location": "editor",
+				"width": "25",
+				"help": "",
+				"default": "",
+				"placeholder": "",
+				"name": "publisher_id",
+				"label": "Publisher ID",
+				"order": 1,
+				"control": "text",
+				"type": "string"
+			},
+			"widget_id": {
+				"location": "editor",
+				"width": "25",
+				"help": "",
+				"default": "",
+				"placeholder": "",
+				"name": "widget_id",
+				"label": "Widget ID",
+				"order": 2,
+				"control": "text",
+				"type": "string"
+			}
+		}
+	},
+	"genesis-custom-blocks/ergebnis-widget": {
+		"name": "ergebnis-widget",
+		"title": "Ergebnis Widget",
+		"excluded": [],
+		"icon": "genesis_custom_blocks",
+		"category": {
+			"icon": null,
+			"slug": "text",
+			"title": "Text"
+		},
+		"keywords": [],
+		"fields": {
+			"ergebnis-title": {
+				"location": "editor",
+				"width": "50",
+				"help": "",
+				"default": "IMTEST Ergebnis:",
+				"placeholder": "Ergebnis Title",
+				"maxlength": "",
+				"name": "ergebnis-title",
+				"label": "Ergebnis Title",
+				"control": "text",
+				"type": "string",
+				"order": 0
+			},
+			"ergebnis-number": {
+				"location": "editor",
+				"width": "50",
+				"help": "",
+				"default": "",
+				"placeholder": "Number",
+				"maxlength": "",
+				"name": "ergebnis-number",
+				"label": "Ergebnis Number",
+				"control": "text",
+				"type": "string",
+				"order": 1
+			}
+		}
+	},
+	"genesis-custom-blocks/icon-list": {
+		"name": "icon-list",
+		"title": "Icon-List",
+		"excluded": [],
+		"icon": "genesis_custom_blocks",
+		"category": {
+			"icon": null,
+			"slug": "text",
+			"title": "Text"
+		},
+		"keywords": [
+			"list",
+			"icon",
+			"fontawesome",
+			"produktdetails"
+		],
+		"fields": {
+			"h-tag": {
+				"location": "editor",
+				"width": "50",
+				"help": "",
+				"options": [
+					{
+						"value": "h2",
+						"label": "h2"
+					},
+					{
+						"value": "h3",
+						"label": "h3"
+					},
+					{
+						"value": "h4",
+						"label": "h4"
+					},
+					{
+						"value": "h5",
+						"label": "h5"
+					},
+					{
+						"value": "h6",
+						"label": "h6"
+					}
+				],
+				"default": "h2",
+				"name": "h-tag",
+				"label": "H tag",
+				"order": 0,
+				"control": "select",
+				"type": "string"
+			},
+			"headline": {
+				"location": "editor",
+				"width": "50",
+				"help": "",
+				"default": "",
+				"placeholder": "",
+				"maxlength": "",
+				"name": "headline",
+				"label": "\u00dcberschrift",
+				"control": "text",
+				"type": "string",
+				"order": 1
+			},
+			"list-rows": {
+				"help": "",
+				"min": 1,
+				"max": "",
+				"sub_fields": {
+					"icon": {
+						"location": "editor",
+						"width": "25",
+						"help": "",
+						"options": [
+							{
+								"value": "fa-battery-three-quarters",
+								"label": "Akkulaufzeit"
+							},
+							{
+								"value": "fa-euro-sign",
+								"label": "€uro"
+							},
+							{
+								"value": "fa-star",
+								"label": "Stern"
+							},
+							{
+								"value": "fa-ruler",
+								"label": "Länge"
+							},
+							{
+								"value": "fa-tachometer-alt",
+								"label": "Geschwindigkeit"
+							},
+							{
+								"value": "fa-weight",
+								"label": "Gewicht"
+							},
+							{
+								"value": "fa-external-link-alt",
+								"label": "Weitere Infos"
+							},
+							{
+								"value": "fa-gamepad",
+								"label": "Spielkonsole"
+							},
+							{
+								"value": "fa-bolt",
+								"label": "Blitz"
+							},
+							{
+								"value": "fa-car",
+								"label": "Auto"
+							},
+							{
+								"value": "fa-tv",
+								"label": "TV"
+							},
+							{
+								"value": "fa-camera",
+								"label": "Kamera"
+							},
+							{
+								"value": "fa-bicycle",
+								"label": "Fahrrad"
+							},
+							{
+								"value": "fa-clock",
+								"label": "Uhr"
+							},
+							{
+								"value": "fa-water",
+								"label": "Wasser"
+							},
+							{
+								"value": "fa-smile",
+								"label": "Smiley"
+							},
+							{
+								"value": "fa-lightbulb",
+								"label": "Glühbirne"
+							},
+							{
+								"value": "fa-hdd",
+								"label": "Lager"
+							},
+							{
+								"value": "fa-info-circle",
+								"label": "Info"
+							},
+							{
+								"value": "fa-archive",
+								"label": "Speicher"
+							},
+							{
+								"value": "fa-usb",
+								"label": "Verbinden"
+							},
+							{
+								"value": "fa-compact-disc",
+								"label": "Disk"
+							},
+							{
+								"value": "fa-comments",
+								"label": "Kommentar"
+							},
+							{
+								"value": "fa-coffee",
+								"label": "Kaffee"
+							}
+						],
+						"default": "",
+						"name": "icon",
+						"label": "Icon",
+						"order": 0,
+						"control": "select",
+						"type": "string",
+						"parent": "list-rows"
+					},
+					"text": {
+						"location": "editor",
+						"width": "75",
+						"help": "",
+						"default": "",
+						"placeholder": "",
+						"maxlength": "",
+						"name": "text",
+						"label": "Text",
+						"control": "text",
+						"type": "string",
+						"order": 1,
+						"parent": "list-rows"
+					}
+				},
+				"name": "list-rows",
+				"label": "Zeilen",
+				"location": "editor",
+				"order": 1,
+				"control": "repeater",
+				"type": "object"
+			}
+		}
+	},
+	"genesis-custom-blocks/counterpixel": {
+		"name": "counterpixel",
+		"title": "Native Advertising Z\u00e4hl-Pixel",
+		"excluded": [
+			"recipe"
+		],
+		"icon": "public",
+		"category": {
+			"icon": null,
+			"slug": "embed",
+			"title": "Einbettungen"
+		},
+		"keywords": [
+			"pixel",
+			"z\u00e4hlpixel",
+			"advertorial",
+			"native",
+			"advertising"
+		],
+		"fields": {
+			"javascript-pixel": {
+				"location": "editor",
+				"width": "100",
+				"help": "Hinweis: Der Pixel-Code kann mit oder ohne <script>-Tags eingef\u00fcgt werden.  Bei Nutzern ohne Admin-Rechte werden die <script>-Tags automatisch beim Speichern entfernt, der Code funktioniert im Frontend trotzdem.",
+				"default": "",
+				"placeholder": "// hier JavaScript code einf\u00fcgen",
+				"maxlength": "",
+				"number_rows": 4,
+				"new_lines": "none",
+				"name": "javascript-pixel",
+				"label": "JavaScript Pixel",
+				"order": 0,
+				"control": "textarea",
+				"type": "string"
+			},
+			"amp-pixel": {
+				"location": "editor",
+				"width": "100",
+				"help": "Hinweis: <img>-Tags werden automatisch f\u00fcr AMP in das entsprechende <amp-img>-Tag konvertiert.",
+				"default": "",
+				"placeholder": "<img ...> oder <amp-img ...> einf\u00fcgen",
+				"maxlength": "",
+				"number_rows": 4,
+				"new_lines": "none",
+				"name": "amp-pixel",
+				"label": "AMP Pixel",
+				"order": 1,
+				"control": "textarea",
+				"type": "string"
+			}
+		}
+	},
+	"genesis-custom-blocks\/advertising": {
+		"name": "advertising",
+		"title": "Advertising",
+		"excluded": [],
+		"icon": "attach_money",
+		"category": {
+			"icon": null,
+			"slug": "Werbung",
+			"title": "Werbung"
+		},
+		"keywords": [
+			"ads",
+			"admo",
+			"werbung"
+		],
+		"fields": {
+			"advertising": {
+				"help": "Es k\u00f6nnen alle Ad-Environments (amp, mob, sta) in diesem Block angelegt werden.",
+				"min": 1,
+				"max": 3,
+				"sub_fields": {
+					"environment": {
+						"location": "editor",
+						"width": "25",
+						"help": "",
+						"options": [
+							{
+								"value": "amp",
+								"label": "AMP"
+							},
+							{
+								"value": "mob",
+								"label": "Mobile"
+							},
+							{
+								"value": "sta",
+								"label": "Desktop"
+							}
+						],
+						"default": "amp",
+						"name": "environment",
+						"label": "Environment",
+						"order": 0,
+						"control": "select",
+						"type": "string",
+						"parent": "advertising"
+					},
+					"ad_slot": {
+						"location": "editor",
+						"width": "50",
+						"help": "",
+						"default": "pos1",
+						"placeholder": "pos1",
+						"maxlength": "",
+						"name": "ad_slot",
+						"label": "Slot-Name",
+						"control": "text",
+						"type": "string",
+						"order": 1,
+						"parent": "advertising"
+					},
+					"ad_sizes": {
+						"location": "editor",
+						"width": "75",
+						"help": "Gr\u00f6\u00dfen des Slots in JS-Array Notation.",
+						"default": "[[300, 250], [300, 600]]",
+						"placeholder": "[[300, 250], [300, 600]]",
+						"maxlength": "",
+						"name": "ad_sizes",
+						"label": "Ad-Sizes",
+						"control": "text",
+						"type": "string",
+						"order": 2,
+						"parent": "advertising"
+					},
+					"poscount": {
+						"location": "editor",
+						"width": "25",
+						"help": "",
+						"default": "1",
+						"placeholder": "",
+						"maxlength": "",
+						"name": "poscount",
+						"label": "Pos-Count",
+						"control": "text",
+						"type": "string",
+						"order": 3,
+						"parent": "advertising"
+					}
+				},
+				"name": "advertising",
+				"label": "Advertising",
+				"location": "editor",
+				"order": 0,
+				"control": "repeater",
+				"type": "object"
+			}
+		},
+		"previewAttributes": {
+			"advertising": {
+				"rows": [
+					[],
+					{
+						"environment": "mob"
+					}
+				]
+			}
+		}
+	},
+	"genesis-custom-blocks\/apester-poll": {
+		"name": "apester-poll",
+		"title": "Apester Poll Widget",
+		"excluded": [],
+		"icon": "genesis_custom_blocks",
+		"category": {
+			"icon": null,
+			"slug": "text",
+			"title": "Text"
+		},
+		"keywords": [
+			"apester"
+		],
+		"fields": {
+			"media-id": {
+				"location": "editor",
+				"width": "50",
+				"help": "",
+				"default": "",
+				"placeholder": "",
+				"maxlength": "",
+				"name": "media-id",
+				"label": "Media ID",
+				"control": "text",
+				"type": "string",
+				"order": 0
+			}
+		}
+	},
+	"genesis-custom-blocks\/apester-strip": {
+		"name": "apester-strip",
+		"title": "Apester Strip",
+		"excluded": [],
+		"icon": "genesis_custom_blocks",
+		"category": {
+			"icon": null,
+			"slug": "text",
+			"title": "Text"
+		},
+		"keywords": [
+			"apester"
+		],
+		"fields": {
+		}
+	},
+	"genesis-custom-blocks\/heise-price-widget": {
+		"name": "heise-price-widget",
+		"title": "Heise Price Widget",
+		"excluded": [],
+		"icon": "attach_money",
+		"category": {
+			"icon": null,
+			"slug": "widgets",
+			"title": "Widgets"
+		},
+		"keywords": [
+			"heise",
+			"price"
+		],
+		"fields": {
+			"partner_id-1": {
+				"location": "editor",
+				"width": "25",
+				"help": "",
+				"default": "funkeone",
+				"placeholder": "",
+				"maxlength": "",
+				"name": "partner_id-1",
+				"label": "Partner-ID",
+				"control": "text",
+				"type": "string",
+				"order": 0
+			},
+			"widget_id": {
+				"location": "editor",
+				"width": "25",
+				"help": "",
+				"default": "",
+				"placeholder": "",
+				"maxlength": "",
+				"name": "widget_id",
+				"label": "Widget_ID",
+				"control": "text",
+				"type": "string",
+				"order": 1
+			},
+			"type": {
+				"location": "editor",
+				"width": "25",
+				"help": "",
+				"options": [
+					{
+						"value": "comparison",
+						"label": "Vergleichstabelle"
+					},
+					{
+						"value": "gallery",
+						"label": "Bilderstrecke"
+					},
+					{
+						"value": "history",
+						"label": "Preishistorie"
+					},
+					{
+						"value": "price",
+						"label": "Angebote"
+					},
+					{
+						"value": "gallery-price",
+						"label": "Bildgalerie-Angebot"
+					}
+				],
+				"default": "",
+				"name": "type",
+				"label": "Type",
+				"order": 2,
+				"control": "select",
+				"type": "string"
+			},
+			"layout": {
+				"location": "editor",
+				"width": "25",
+				"help": "",
+				"options": [
+					{
+						"value": "normal",
+						"label": "Standardaussehen"
+					},
+					{
+						"value": "compact",
+						"label": "Reduzierte H\u00f6he"
+					},
+					{
+						"value": "supercompact",
+						"label": "Nur das erste Angebot"
+					}
+				],
+				"default": "normal",
+				"name": "layout",
+				"label": "Layout",
+				"order": 3,
+				"control": "select",
+				"type": "string"
+			}
+		}
+	}
+}

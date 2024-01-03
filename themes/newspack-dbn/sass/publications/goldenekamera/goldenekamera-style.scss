@@ -1,0 +1,159 @@
+.home {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-transform: uppercase;
+	}
+}
+
+body,
+.home .content-area,
+.site-breadcrumb .wrapper {
+	background: url("/wp-content/themes/newspack-dbn/assets/goka-bg.jpeg")
+		repeatfixed 0% 0% transparent;
+}
+
+/* Taking control of teasers height.
+If set from the editor they depend on viewport height (vh). Min-height from the editor should be set to 0.
+*/
+
+@media only screen and (max-width: 599px) {
+	.home .wpnbha article.post-has-image {
+		min-height: 240px !important;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.goka-style-home {
+		&--hero {
+			.wp-block-group__inner-container > div {
+				&:nth-child(1) {
+					height: 450px;
+					> div {
+						height: 100%;
+
+						> article {
+							height: 100%;
+						}
+					}
+				}
+
+				&:nth-child(2) {
+					height: 313px;
+
+					> div {
+						height: 100%;
+					}
+				}
+			}
+		}
+		&--board {
+			h2 {
+				padding: 16px;
+				margin: 0px !important;
+			}
+			.wp-block-columns {
+				margin-top: 0px !important;
+			}
+			.wp-block-group__inner-container .wp-block-columns {
+				height: 500px;
+			}
+			&--long > div {
+				height: 100%;
+
+				> div {
+					height: 100%;
+
+					> article {
+						height: 100%;
+					}
+				}
+			}
+			&--short > div {
+				height: 100%;
+
+				> div {
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+.goka-style-home {
+	&--videos {
+		.wp-block-group__inner-container {
+			figure {
+				line-height: 0;
+			}
+			> :nth-child(1) {
+				margin-bottom: -12px !important;
+				margin-inline: -20px;
+				padding: 10px;
+			}
+		}
+	}
+}
+
+/* Targeting home teasers but can be expanded to category ones? */
+@media only screen and (min-width: 600px) {
+	.home .wpnbha.image-alignbehind .post-has-image .entry-wrapper {
+		padding: 0 0.8rem 0.5rem;
+	}
+}
+
+/*Article teaser shadow - newspack shadow overwrite*/
+.wp-block-newspack-blocks-homepage-articles.wpnbha.image-alignbehind
+	.post-has-image
+	.post-thumbnail
+	a:after {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(rgba(20, 20, 20, 0)),
+		color-stop(50%, rgba(20, 20, 20, 0)),
+		to(rgba(20, 20, 20, 0.9))
+	);
+	background: linear-gradient(
+		180deg,
+		rgba(20, 20, 20, 0) 0%,
+		rgba(20, 20, 20, 0) 50%,
+		rgba(20, 20, 20, 0.9) 100%
+	);
+	content: "";
+	position: absolute;
+	z-index: 1;
+	inset: 0;
+}
+.wpnbha.image-alignbehind .post-has-image .post-thumbnail:after {
+	display: none;
+}
+
+// Header
+.middle-header-contain {
+	background-color: var(--secondary-color, $color__secondary);
+	.wrapper > * {
+		color: var(--primary-color, $color__primary);
+	}
+}
+#masthead .middle-header-contain .wrapper {
+	@include media(tablet) {
+		.site-branding {
+			order: 1;
+		}
+		#social-nav-contain {
+			order: 2;
+		}
+		.nav-wrapper {
+			order: 3;
+		}
+		> * {
+			flex: initial;
+			width: auto;
+		}
+	}
+}

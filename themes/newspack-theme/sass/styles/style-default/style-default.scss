@@ -1,0 +1,222 @@
+@use 'sass:color';
+@use '../../mixins/utilities';
+@use '../../variables-site/colors';
+@use '../../variables-site/fonts';
+@use '../../variables-site/structure';
+
+/* Headers */
+
+.accent-header,
+#secondary .widgettitle,
+.article-section-title {
+	border-bottom: 4px solid colors.$color__border;
+	color: colors.$color__primary;
+	padding-bottom: #{structure.$size__spacing-unit * 0.33};
+}
+
+.accent-header,
+.article-section-title {
+	font-size: fonts.$font__size-sm;
+}
+
+.accent-header,
+.wp-block-columns .wp-block-column > .accent-header,
+.entry-content .wpnbha .article-section-title {
+	margin-bottom: #{structure.$size__spacing-unit * 0.75};
+}
+
+/* Navigation */
+
+.nav3 {
+	a {
+		background-color: color.adjust(colors.$color__text-light, $lightness: 45%);
+		color: colors.$color__text-main;
+		@include utilities.button-transition;
+		border-radius: 5px;
+		font-size: fonts.$font__size-sm;
+		font-weight: 700;
+		padding: #{structure.$size__spacing-unit * 0.5} #{structure.$size__spacing-unit * 0.75};
+	}
+
+	.menu-highlight a {
+		background-color: colors.$color__primary;
+		border: 0;
+		color: #fff;
+		padding: #{structure.$size__spacing-unit * 0.5} #{structure.$size__spacing-unit * 0.75};
+	}
+}
+
+.h-sb .site-header .nav3 {
+	a {
+		background-color: color.adjust(colors.$color__primary, $lightness: -10%);
+		color: #fff;
+	}
+
+	.menu-highlight a {
+		background-color: colors.$color__secondary;
+	}
+}
+
+.nav3,
+.h-sb .nav3 {
+	li a,
+	li.menu-highlight a {
+		&:hover,
+		&:focus {
+			background-color: colors.$color__text-main;
+			color: #fff;
+			opacity: 1;
+		}
+	}
+}
+
+.mobile-sidebar .nav3 {
+	a {
+		background: transparent;
+		padding: #{structure.$size__spacing-unit * 0.5} #{structure.$size__spacing-unit * 0.75};
+	}
+
+	.menu-highlight a {
+		background-color: color.adjust(colors.$color__primary, $lightness: -10%);
+	}
+}
+
+.subpage-sidebar .nav3 a {
+	padding: #{structure.$size__spacing-unit * 0.5} #{structure.$size__spacing-unit * 0.75};
+}
+
+/* Posts and pages */
+
+.cat-links {
+	a {
+		background-color: colors.$color__primary;
+		color: #fff;
+		display: inline-block;
+		line-height: 1;
+		margin: 0 #{0.25 * structure.$size__spacing-unit} #{0.25 * structure.$size__spacing-unit} 0;
+		padding: 0.3em 0.5em;
+
+		&:visited {
+			color: #fff;
+		}
+
+		&:hover {
+			background-color: colors.$color__primary-variation;
+			color: #fff;
+		}
+	}
+}
+
+.wpnbha,
+.wpnbpc {
+	.cat-links a {
+		margin: 0;
+		padding: 0;
+
+		&,
+		&:visited,
+		&:hover {
+			background-color: transparent;
+			color: inherit;
+		}
+	}
+}
+
+//! Newspack Article Carousel
+.wp-block-newspack-blocks-carousel {
+	.cat-links a {
+		background: transparent;
+		padding: 0;
+	}
+}
+
+.featured-image-behind .cat-links {
+	font-size: fonts.$font__size-sm;
+
+	a,
+	a:hover,
+	a:visited {
+		background-color: transparent;
+		color: inherit;
+		margin: 0;
+		padding: 0;
+	}
+
+	.sep {
+		display: inline;
+	}
+}
+
+@include utilities.media(tablet) {
+	.featured-image-beside .cat-links {
+		a,
+		a:hover,
+		a:visited {
+			background-color: transparent;
+			color: inherit;
+			margin: 0;
+			padding: 0;
+		}
+
+		.sep {
+			display: inline;
+		}
+	}
+}
+
+footer.entry-footer a {
+	color: colors.$color__primary-variation;
+}
+
+.tags-links a {
+	background-color: #f1f1f1;
+	margin: 0 #{0.25 * structure.$size__spacing-unit} #{0.25 * structure.$size__spacing-unit} 0;
+	padding: #{0.25 * structure.$size__spacing-unit} #{0.5 * structure.$size__spacing-unit};
+}
+
+.cat-links,
+.tags-links {
+	.sep {
+		display: none;
+	}
+}
+
+/* Archives */
+
+.blog,
+.search,
+.archive {
+	.cat-links {
+		margin-bottom: #{0.5 * structure.$size__spacing-unit};
+
+		a {
+			font-size: 0.65rem;
+			margin-bottom: 0;
+			padding: 0.25em 0.5em;
+		}
+	}
+}
+
+/* Footer */
+
+.site-footer .footer-branding,
+.site-footer .footer-widgets:first-child {
+	.wrapper {
+		border-top: 4px solid colors.$color__border;
+	}
+}
+
+.af-widget {
+	.site-footer .footer-branding,
+	.site-footer .footer-widgets:first-child {
+		.wrapper {
+			border: 0;
+		}
+	}
+}
+
+// Sponsored Content
+.single.sponsors-show-cats .sponsor-label,
+.single.sponsors-show-cats .sponsor-label + button {
+	margin-bottom: #{0.25 * structure.$size__spacing-unit};
+}

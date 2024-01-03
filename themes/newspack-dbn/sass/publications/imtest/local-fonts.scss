@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 300 900;
+	src: url( '/wp-content/themes/newspack-dbn/fonts/Rubik/Rubik-VariableFont_wght.woff2' )
+			format( 'woff2 supports variations' ),
+		url( '/wp-content/themes/newspack-dbn/fonts/Rubik/Rubik-VariableFont_wght.woff2' )
+			format( 'woff2-variations' );
+}
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	src: url( '/wp-content/themes/newspack-dbn/fonts/Poppins/Poppins-Bold.woff2' ) format( 'woff2' );
+}
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url( '/wp-content/themes/newspack-dbn/fonts/Poppins/Poppins-Regular.woff2' )
+		format( 'woff2' );
+}
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	src: url( '/wp-content/themes/newspack-dbn/fonts/Poppins/Poppins-Medium.woff2' ) format( 'woff2' );
+}

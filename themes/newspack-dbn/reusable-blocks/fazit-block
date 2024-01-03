@@ -1,0 +1,31 @@
+<!-- wp:group {"tagName":"section","className":"fazit-box"} -->
+<section class="wp-block-group fazit-box"><!-- wp:heading {"className":"title"} -->
+<h2 class="title">FAZIT</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>...</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fazit-pro"} -->
+<ul class="fazit-pro"><li>PRO<ul><li>...</li></ul></li></ul>
+<!-- /wp:list -->
+
+<!-- wp:list {"className":"fazit-con"} -->
+<ul class="fazit-con"><li>KONTRA<ul><li>...</li></ul></li></ul>
+<!-- /wp:list -->
+
+<!-- wp:columns {"className":"score"} -->
+<div class="wp-block-columns score"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>IMTEST ERGEBNIS:</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>...</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></section>
+<!-- /wp:group -->

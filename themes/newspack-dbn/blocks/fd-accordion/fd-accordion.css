@@ -1,0 +1,30 @@
+.fd-accordion-item {
+	margin-bottom: .5rem;
+}
+
+.fd-accordion-heading {
+	margin: 0;
+}
+
+.fd-accordion-button {
+	text-align: left;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.fd-accordion-button:after {
+	content: '\002B';
+}
+
+.active .fd-accordion-button:after {
+	content: "\2212";
+}
+
+.fd-accordion-body {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}

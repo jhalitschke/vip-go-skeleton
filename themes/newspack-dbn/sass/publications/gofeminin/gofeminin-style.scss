@@ -1,0 +1,373 @@
+// Global icon size control
+$cat-icons-size: 100px;
+
+// Global Animations
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+@keyframes flash {
+	0%,
+	100% {
+		opacity: 0;
+	}
+
+	20%,
+	80% {
+		opacity: 1;
+	}
+}
+
+// Social Trends
+$carousel-image-size: 110px;
+
+$ws-story-min-width: $carousel-image-size !important;
+
+.social-trends {
+	glider-track {
+		width: auto !important;
+	}
+
+	> .wp-block-group__inner-container {
+		display: flex;
+		justify-content: space-evenly;
+		gap: 1em;
+		@media screen and (max-width: 781px) {
+			flex-direction: column;
+		}
+
+		> * {
+			margin: 0 !important;
+		}
+	}
+
+	.web-stories-list {
+		@media screen and (min-width: 782px) {
+			&.has-archive-link {
+				display: flex;
+				place-items: center;
+			}
+		}
+
+		&__story-poster {
+			&:after {
+				content: initial;
+			}
+
+			img {
+				border: 2px solid rgba(10, 77, 87, 0.1);
+				border-radius: 50%;
+				width: $carousel-image-size;
+				aspect-ratio: 1/1;
+			}
+
+			a {
+				position: relative;
+				display: flex;
+				place-content: center;
+
+				&::after {
+					content: "";
+					position: absolute;
+					inset: 0;
+					width: 25px;
+					aspect-ratio: 1;
+					border-style: solid;
+					border-width: calc($carousel-image-size / 6) 0
+						calc($carousel-image-size / 6) calc($carousel-image-size / 4);
+					border-color: transparent transparent transparent #fff;
+					box-sizing: border-box;
+					margin: auto;
+				}
+			}
+		}
+
+		&__story-poster,
+		&__story-poster a {
+			width: 100%;
+			height: $carousel-image-size;
+		}
+
+		&__story-content-overlay {
+			display: none;
+		}
+
+		.web-stories-list__story {
+			width: $carousel-image-size !important;
+			min-width: $carousel-image-size !important;
+		}
+	}
+
+	.section-heading {
+		margin: 0;
+		@media screen and (min-width: 782px) {
+			max-width: 150px;
+		}
+
+		.wp-block-group__inner-container {
+			display: flex;
+			position: relative;
+			color: #fff;
+		}
+
+		.heading-img {
+			display: inline-block;
+			position: relative;
+			width: calc($cat-icons-size * 1.5);
+			aspect-ratio: 1;
+			margin: 0;
+			z-index: 3;
+			@media screen and (max-width: 781px) {
+				position: absolute;
+				right: calc(-20vw);
+				bottom: 0;
+			}
+		}
+
+		.social-icon {
+			&::before {
+				content: "";
+				position: absolute;
+				width: calc($cat-icons-size * 1.5);
+				aspect-ratio: 1;
+				background: url("/wp-content/themes/newspack-dbn/assets/gofeminin-static/social.svg")
+					no-repeat;
+				background-size: cover;
+				right: 0;
+				bottom: 10px;
+				-webkit-animation: rotation 12.5s linear infinite;
+				animation: rotation 12.5s linear infinite;
+				transform: translate(-50%, -50%);
+				z-index: 3;
+			}
+
+			&::after {
+				content: "";
+				width: calc($cat-icons-size * 0.8);
+				aspect-ratio: 1;
+				background: #ffc800;
+				border-radius: 50%;
+				border: 4px solid #fff;
+				position: absolute;
+				bottom: 20px;
+				right: 15px;
+				z-index: -1;
+			}
+		}
+	}
+
+	#h-weitere-themen {
+		color: #fff;
+		margin-bottom: 0;
+	}
+
+	.wp-block-group__inner-container {
+		h2 {
+			white-space: nowrap;
+			margin: 0;
+			color: #fff;
+			font-size: 2.5rem;
+			font-weight: 600;
+			text-align: center;
+			@media screen and (min-width: 600px) {
+				writing-mode: vertical-lr;
+				transform: rotate(180deg);
+			}
+
+			&:after {
+				content: "";
+				border-radius: 50%;
+				background: #ffc800;
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				animation: flash 2.5s linear infinite;
+			}
+		}
+	}
+}
+
+// Header
+#masthead .middle-header-contain .wrapper {
+	@media screen and (max-width: 781px) {
+		flex-flow: row-reverse;
+	}
+	.desktop-only .nav1 {
+		display: none;
+	}
+
+	#social-nav-contain {
+		order: 1;
+	}
+	.site-branding {
+		order: 2;
+
+		@media only screen and (min-width: 782px) {
+			margin-inline: auto;
+		}
+	}
+	.nav-wrapper {
+		order: 3;
+	}
+	.mobile-menu-toggle {
+		display: flex;
+		margin-left: initial;
+		order: 4;
+	}
+	> div {
+		flex: initial;
+		width: auto;
+	}
+}
+
+// Menu
+.mobile-menu-opened #mobile-sidebar-fallback {
+	left: 0;
+	right: auto;
+
+	@at-root #mobile-sidebar-fallback {
+		left: -100%;
+		transition: left 0.2s;
+	}
+}
+
+// Logo resize
+#masthead.shrink .custom-logo-link .custom-logo {
+	@media screen and (min-width: 782px) {
+		width: 140px !important;
+	}
+}
+
+// Figure
+figure.post-thumbnail {
+	will-change: transform;
+	transition: 1.4s cubic-bezier(0.23, 1, 0.32, 1);
+
+	&:hover {
+		transform: scale3d(1.05, 1.05, 1);
+	}
+}
+
+// Home Category Icons
+@mixin category-icon($cat-name) {
+	[class*="#{$cat-name}"] .is-sticky article::before {
+		background: url("/wp-content/themes/newspack-dbn/assets/gofeminin-static/#{$cat-name}.svg")
+			no-repeat;
+		background-size: cover;
+	}
+}
+
+div {
+	&[class*="group"] {
+		.is-sticky article::before {
+			content: "";
+			position: absolute;
+			will-change: rotate;
+			top: calc(($cat-icons-size/2) * -1);
+			width: $cat-icons-size;
+			aspect-ratio: 1;
+			z-index: 100;
+			animation: rotation 12.5s linear infinite;
+		}
+
+		&.icon-right .is-sticky article::before {
+			right: calc(($cat-icons-size/2) * -1);
+		}
+
+		&.icon-left .is-sticky article::before {
+			left: calc(($cat-icons-size/2) * -1);
+		}
+	}
+
+	@include category-icon("focus");
+	@include category-icon("lifestyle");
+	@include category-icon("familie");
+	@include category-icon("beauty");
+	@include category-icon("health");
+	@include category-icon("psychology");
+	@include category-icon("social");
+}
+
+// Home - Sticky column
+.is-sticky {
+	display: block;
+	position: sticky;
+	clear: both;
+	z-index: 99;
+	top: 133px;
+
+	&.wpnbha.image-alignbehind .post-has-image .post-thumbnail:after {
+		background: linear-gradient(
+			180deg,
+			rgba(238, 238, 238, 0) 0%,
+			rgba(113, 113, 113, 0.37) 55%,
+			rgba(0, 0, 0, 0.46) 100%
+		);
+	}
+}
+
+// Home -  Video Des Tages
+.video-des-tages {
+	h2 {
+		position: relative;
+		z-index: 2;
+	}
+
+	figure {
+		line-height: 0;
+	}
+
+	.wp-block-columns .wp-block-column:first-child article::before {
+		content: "";
+		position: absolute;
+		top: -160px;
+		bottom: -62px;
+		right: -32px;
+		left: 24%;
+		border-bottom-right-radius: 52px;
+		background: #d90075;
+		z-index: 0;
+	}
+}
+
+// Home - Carousel
+.wp-block-newspack-blocks-carousel {
+	article {
+		border-bottom-right-radius: 46px;
+		overflow: hidden;
+
+		.entry-wrapper {
+			background-color: unset !important;
+			background-image: linear-gradient(
+				180deg,
+				rgba(0, 0, 0, 0) 0%,
+				rgba(0, 0, 0, 0.7) 100%
+			);
+		}
+	}
+
+	.swiper-button {
+		border: unset !important;
+		background-color: unset !important;
+		background-size: 3em !important;
+	}
+
+	.swiper-pagination-bullets {
+		display: none !important;
+	}
+}
+
+// Home - Grid on mobile
+@media screen and (max-width: 599px) {
+	.home .wpnbha.is-grid > div {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+	}
+}

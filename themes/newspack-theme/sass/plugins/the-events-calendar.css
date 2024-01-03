@@ -1,0 +1,45 @@
+/*
+Error: Invalid CSS after "...clude utilities": expected "}", was ".media( tablet ) {"
+        on line 26 of the-events-calendar.scss
+
+21:
+22: .single-tribe_events {
+23: 	.site-content {
+24: 		margin-top: 0;
+25:
+26: 		@include utilities.media( tablet ) {
+27: 			margin-top: structure.$size__spacing-unit;
+28: 		}
+29: 	}
+30:
+31: 	.tribe_events {
+
+Backtrace:
+the-events-calendar.scss:26
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:667:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:387:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+	white-space: pre;
+	font-family: monospace;
+	content: "Error: Invalid CSS after \"...clude utilities\": expected \"}\", was \".media( tablet ) {\"\A         on line 26 of the-events-calendar.scss\A \A 21: \A 22: .single-tribe_events {\A 23: 	.site-content {\A 24: 		margin-top: 0;\A 25: \A 26: 		@include utilities.media( tablet ) {\A 27: 			margin-top: structure.$size__spacing-unit;\A 28: 		}\A 29: 	}\A 30: \A 31: 	.tribe_events {";
+}

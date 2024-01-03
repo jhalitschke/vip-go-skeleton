@@ -1,0 +1,51 @@
+/*
+Error: Invalid CSS after "...kground: colors": expected ";", was ".$color__highli..."
+        on line 9 of newspack-sponsors-editor.scss
+
+4: @use '../variables-site/structure';
+5:
+6: // Newspack Blocks
+7: .sponsor-label {
+8: 	.flag {
+9: 		background: colors.$color__highlight;
+10: 		color: colors.$color__text-main;
+11: 		line-height: 1;
+12: 		padding: 0.3em 0.5em;
+13: 		text-transform: uppercase;
+14: 	}
+
+Backtrace:
+newspack-sponsors-editor.scss:9
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:786:in `block in try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1183:in `rethrow'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:791:in `try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:387:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+	white-space: pre;
+	font-family: monospace;
+	content: "Error: Invalid CSS after \"...kground: colors\": expected \";\", was \".$color__highli...\"\A         on line 9 of newspack-sponsors-editor.scss\A \A 4: @use '../variables-site/structure';\A 5: \A 6: // Newspack Blocks\A 7: .sponsor-label {\A 8: 	.flag {\A 9: 		background: colors.$color__highlight;\A 10: 		color: colors.$color__text-main;\A 11: 		line-height: 1;\A 12: 		padding: 0.3em 0.5em;\A 13: 		text-transform: uppercase;\A 14: 	}";
+}

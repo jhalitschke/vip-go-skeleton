@@ -1,0 +1,62 @@
+@use '../mixins/utilities';
+@use '../variables-site/colors';
+@use '../variables-site/fonts';
+@use '../variables-site/structure';
+
+/* Infinite scroll */
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .pagination,
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+.infinite-loader {
+	margin: calc( 3 * 1rem ) auto;
+}
+
+.infinite-loader .spinner {
+	margin: 0 auto;
+	left: inherit !important;
+}
+
+.site-main #infinite-handle {
+	margin: calc( 2 * 1rem ) auto;
+}
+
+.site-main #infinite-handle span {
+	background: transparent;
+	display: block;
+	font-size: fonts.$font__size-sm;
+	text-align: center;
+}
+
+.site-main #infinite-handle span button,
+.site-main #infinite-handle span button:hover,
+.site-main #infinite-handle span button:focus {
+	@include utilities.button-transition;
+	background: colors.$color__background-button;
+	color: colors.$color__background-body;
+	font-family: fonts.$font__heading;
+	font-weight: 700;
+	line-height: fonts.$font__line-height-heading;
+	padding: (structure.$size__spacing-unit * 0.76) structure.$size__spacing-unit;
+
+	&:hover {
+		background: colors.$color__background-button-hover;
+		cursor: pointer;
+	}
+
+	&:focus {
+		background: colors.$color__background-button-hover;
+		outline: thin dotted;
+		outline-offset: -4px;
+	}
+}

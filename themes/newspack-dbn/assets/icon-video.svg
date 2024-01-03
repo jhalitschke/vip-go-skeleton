@@ -1,0 +1,10 @@
+<svg id="egt9Sovzxjb1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 58 58"
+    shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <circle r="29" transform="translate(29 29)" fill="#fff" />
+    <g>
+        <polygon points="44,29 22,44 22,29.273 22,14" fill="var(--primary-color, currentColor)" />
+        <path
+            d="M22,45c-.16,0-.321-.038-.467-.116C21.205,44.711,21,44.371,21,44v-30c0-.371.205-.711.533-.884.328-.174.724-.15,1.031.058l22,15c.272.186.436.495.436.826s-.164.64-.437.826l-22,15c-.169.115-.366.174-.563.174Zm1-29.107v26.215L42.225,29L23,15.893Z"
+            fill="var(--primary-color, currentColor)" />
+    </g>
+</svg>

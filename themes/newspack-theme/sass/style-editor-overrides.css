@@ -1,0 +1,35 @@
+/*
+Error: Invalid CSS after "@include utilities": expected selector or at-rule, was ".media( mobile ) {"
+        on line 17 of style-editor-overrides.scss
+
+12: @use 'variables-site/fonts';
+13: @use 'variables-site/structure';
+14:
+15: /** === Default Template === *\/
+16:
+17: @include utilities.media( mobile ) {
+18: 	body.newspack-default-template
+19: 		.block-editor-block-list__layout.is-root-container
+20: 		> .wp-block[data-align='full'] {
+21: 		margin-left: auto;
+22: 		margin-right: auto;
+
+Backtrace:
+style-editor-overrides.scss:17
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:42:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:387:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+	white-space: pre;
+	font-family: monospace;
+	content: "Error: Invalid CSS after \"@include utilities\": expected selector or at-rule, was \".media( mobile ) {\"\A         on line 17 of style-editor-overrides.scss\A \A 12: @use 'variables-site/fonts';\A 13: @use 'variables-site/structure';\A 14: \A 15: /** === Default Template === */\A 16: \A 17: @include utilities.media( mobile ) {\A 18: 	body.newspack-default-template\A 19: 		.block-editor-block-list__layout.is-root-container\A 20: 		> .wp-block[data-align='full'] {\A 21: 		margin-left: auto;\A 22: 		margin-right: auto;";
+}
